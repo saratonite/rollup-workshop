@@ -5,9 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "minimal": "rollup ./src/app.js --output ./src/app.dist.js --format cjs"
+    "minimal": "rollup ./src/app.js --output ./src/app.dist.js --format cjs",
+    "start": "rollup -c"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "rollup": "^0.34.1",
+    "rollup-plugin-babel": "^2.6.1"
+  }
 }
